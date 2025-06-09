@@ -2,86 +2,16 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Header from './components/Header'
+import Services from './components/Services'
+import CustomButton from './components/CustomButton'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
 		<div className='body'>
-      <header className="header-section">
-				<div className="container">
-					<div className="header-wrapper">
-						<div className="logo-menu">
-							<a href="index.html" className="logo">
-								<img src="https://cdn-icons-png.freepik.com/256/5968/5968507.png?uid=R167929721&ga=GA1.1.1538646131.1728666203&semt=ais_incoming" alt="main-logo"/>
-							</a>
-						</div>
-						
-						<ul className="main-menu">
-							<li className="active">
-								<a href="#0">home <i className="fas fa-chevron-down"></i></a>
-								<ul className="sub-menu">
-								   <li><a href="index.html">Home One</a></li>
-								   <li><a href="index-2.html">Home Two</a></li>
-								   <li><a href="index-3.html">Home Three</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#0">About <i className="fas fa-chevron-down"></i></a>
-								<ul className="sub-menu">
-								   <li><a href="about.html">About Style One</a></li>
-								   <li><a href="about-2.html">About Style Two</a></li>
-								   <li><a href="about-3.html">About Style Three</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#0">Services <i className="fas fa-chevron-down"></i></a>
-								<ul className="sub-menu">
-								   <li><a href="service.html">Services Style One</a></li>
-								   <li><a href="service-single.html">Services Single</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#0">Team <i className="fas fa-chevron-down"></i></a>
-								<ul className="sub-menu">
-								   <li><a href="team.html">Team Style One</a></li>
-								   <li><a href="team-single.html">Team Single</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#0">Blog <i className="fas fa-chevron-down"></i></a>
-								<ul className="sub-menu">
-								   <li><a href="blog.html">Blog Style One</a></li>
-								   <li><a href="blog-single.html">Blog Single</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#0">Pages <i className="fas fa-chevron-down"></i></a>
-								<ul className="sub-menu">
-								   <li><a href="portfolio.html">Portfolio Style One</a></li>
-								   <li><a href="portfolio-2.html">Portfolio Style Two</a></li>
-								   <li><a href="portfolio-3.html">Portfolio Style Three</a></li>
-								   <li><a href="portfolio-single.html">Portfolio Single</a></li>
-								   <li><a href="404.html">404</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#0">Shop <i className="fas fa-chevron-down"></i></a>
-								<ul className="sub-menu">
-									<li><a href="shop-page.html">Shop Page</a></li>
-									<li><a href="shop-cart.html">Shop cart</a></li>
-									<li><a href="shop-single.html">Shop Single</a></li>
-									<li><a href="checkout.html">Checkout</a></li>
-									<li><a href="payment-successful.html">Successful</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="contact.html">Contact Us</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</header>
+      <Header/>
 
 			<main>
         <section className="banner-section-one">
@@ -94,8 +24,10 @@ function App() {
 										<h4>best for business theme</h4>
 									</div>
 									<div className="banner-button mt-30">
-										<a className="cmn--btn" href="#0">read more</a>
-										<a className="cmn--btn-one" href="service-single.html">view services</a>
+                    <CustomButton buttonClass = "cmn--btn" title="read more"/>
+                    <CustomButton buttonClass = "cmn--btn-one" title="view services"/>
+										{/* <a className="cmn--btn" href="#0">read more</a> */}
+										{/* <a className="cmn--btn-one" href="service-single.html">view services</a> */}
 									</div>
 								</div> 
 							</div>
@@ -260,98 +192,7 @@ function App() {
           </div>
         </section>
 		
-        <section className="service-section pt-120 pb-120">
-          <div className="container">
-            <div className="section-header ">
-              <h3 className="section-title">our services</h3>
-              <p>Rapidiously expedite granular imperatives before economically sound web services.<br/> Credibly actualize pandemic strategic themeplatform.</p>
-            </div>
-            <div className="service-content">
-              <div className="container">
-                <div className="row g-4">
-              <div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
-                <div className="service-items">
-                  <div className="icon">
-                    <img src="https://cdn-icons-png.freepik.com/256/5234/5234827.png?uid=R167929721&ga=GA1.1.1538646131.1728666203&semt=ais_incoming" alt="icon-image"/>
-                  </div>
-                   <div className="icon-content">
-                    <h5><a href="service-single.html">CREATIVE DESIGNS</a></h5>
-                    <p>
-                    Collaboratively leverage other's an quality bandwidth through covalent theme value. Appropriately coordinate.
-                    </p>
-                   </div>
-                </div>
-              </div>
-              <div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
-                <div className="service-items">
-                  <div className="icon">
-                    <img src="https://cdn-icons-png.freepik.com/256/574/574232.png?uid=R167929721&ga=GA1.1.1538646131.1728666203&semt=ais_incoming" alt="icon-image"/>
-                  </div>
-                  <div className="icon-content">
-                    <h5><a href="service-single.html">app development</a></h5>
-                    <p>
-                    Collaboratively leverage other's an quality bandwidth through covalent theme value. Appropriately coordinate.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
-                <div className="service-items">
-                  <div className="icon">
-                    <img src="https://cdn-icons-png.freepik.com/256/1069/1069813.png?uid=R167929721&ga=GA1.1.1538646131.1728666203&semt=ais_incoming" alt="icon-image"/>
-                  </div>
-                  <div className="icon-content">
-                    <h5><a href="service-single.html">web development</a></h5>
-                    <p>
-                    Collaboratively leverage other's an quality bandwidth through covalent theme value. Appropriately coordinate.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
-                <div className="service-items">
-                  <div className="icon">
-                    <img src="https://cdn-icons-png.freepik.com/256/5698/5698232.png?uid=R167929721&ga=GA1.1.1538646131.1728666203&semt=ais_incoming" alt="icon-image"/>
-                  </div>
-                  <div className="icon-content">
-                    <h5><a href="service-single.html"> Programming</a></h5>
-                    <p>
-                    Collaboratively leverage other's an quality bandwidth through covalent theme value. Appropriately coordinate.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
-                <div className="service-items">
-                  <div className="icon">
-                    <img src="https://cdn-icons-png.freepik.com/256/6047/6047236.png?uid=R167929721&ga=GA1.1.1538646131.1728666203&semt=ais_incoming" alt="icon-image"/>
-                  </div>
-                  <div className="icon-content">
-                    <h5><a href="service-single.html"> Online Marketing</a></h5>
-                    <p>
-                    Collaboratively leverage other's an quality bandwidth through covalent theme value. Appropriately coordinate.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6">
-                <div className="service-items">
-                    <div className="icon">
-                    <img src="https://cdn-icons-png.freepik.com/256/349/349534.png?uid=R167929721&ga=GA1.1.1538646131.1728666203&semt=ais_incoming" alt="icon-image"/>
-                    </div>
-                    <div className="icon-content">
-                    <h5><a href="service-single.html">Photography</a></h5>
-                    <p>
-                    Collaboratively leverage other's an quality bandwidth through covalent theme value. Appropriately coordinate.
-                    </p>
-                    </div>
-                </div>
-              </div>
-            </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Services/>
       </main>
       </div>
   )
