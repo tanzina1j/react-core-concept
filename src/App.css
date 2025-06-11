@@ -1,4 +1,6 @@
-
+body{
+  display: block;
+}
 
 h1,h2,h3,h4,h5,a,h6{
 	text-transform:uppercase;
@@ -145,6 +147,9 @@ ul li{
 .pt-50{
   padding-top: 50px;
 }
+.pb-50{
+  padding-bottom: 50px;
+}
 .mt-30{
   margin-top: 30px;
 }
@@ -252,9 +257,10 @@ ul li{
 
 .banner-section-one{
 	overflow:hidden;
+  background-image: url('../src/assets/banner.jpg');
 }
 .banner-section-one .banner-items{
-	padding:250px 0 200px;
+	padding:200px 80px 160px;
 }
 .banner-section-one .banner-items h1{
 	color:#dfc123;
@@ -277,14 +283,14 @@ ul li{
 }
 
 
-.service-section-one .service-title{
+.about-section .service-title{
 	font-size:48px;
 	font-weight:700;
 }
-.service-section-one {
+.about-section {
   overflow: hidden;
 }
-.service-section-one .service-items {
+.about-section .service-items {
   border: 1px solid rgb(240, 240, 240);
   border-radius:2px;
   padding: 10px 30px;
@@ -296,7 +302,7 @@ ul li{
   height: 40px;
   line-height: 100px;
 }
-.service-section-one .service-items:hover {
+.about-section .service-items:hover {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -336,7 +342,20 @@ ul li{
 	height: 100%;
 }
 
-
+/* team section start */
+.team-items{
+  background-color: #3534340f;
+}
+.team-content h4{
+  color:#1fb5ac;
+}
+.team-content h6{
+  color:#dfc123;
+}
+.team-items:hover {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+/* team section end*/
 
 .portfolio-section {
   overflow: hidden;
@@ -374,14 +393,12 @@ ul li{
 }
 .service-section {
   overflow: hidden;
-  width: 1320px;
- 
 }
 .section-header{
 	text-align:center;
 }
-.service-items {
-  border: 1px solid rgb(240, 240, 240);
+.service-items, .team-items {
+  border: 1.5px solid rgb(226, 224, 224);
   padding: 30px 30px;
   transition: all 0.3s;
   height:100%
