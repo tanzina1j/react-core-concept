@@ -11,6 +11,7 @@ import About from './components/About'
 import Banner from './components/Banner'
 import Counter from './components/Counter'
 
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -24,8 +25,11 @@ function App() {
         <Team/>
         <Portfolio/>
         <Services/>
+        <CustomButton/>
       </main>
-      </div>
+    </div>
+
+			
   )
 }
 

@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const ServicesCard = ({serviceData}) => {
     const {title, icon, description} = serviceData
   return (
@@ -19,3 +20,5 @@ const ServicesCard = ({serviceData}) => {
 }
 
 export default ServicesCard
+
+

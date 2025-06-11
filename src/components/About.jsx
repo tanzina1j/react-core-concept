@@ -1,6 +1,5 @@
 import React from 'react'
 import CustomButton from './CustomButton'
-import ReactIcon from '../assets/react.svg'
 import AboutCard from './AboutCard'
 const About = () => {
   const abouts =[
@@ -42,7 +41,6 @@ const About = () => {
                     Enthusiastically maintain effective anifunctionalities 
                     Conveniently are arecaptiualize
                   </p>
-                  <img src={ReactIcon} alt="" />
                   <div className="service-btn mt-30">
                     <CustomButton buttonClass = "cmn--btn" title = "read more"/>
                   </div> 
